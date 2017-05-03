@@ -1,3 +1,1 @@
-import ppt
-
-def 
+def

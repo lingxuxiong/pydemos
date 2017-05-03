@@ -4,20 +4,22 @@
 # check https://www.programiz.com/python-programming/closure
 
 def outterPrintMessage(msg):
-
     def innerPrintMessage():
         print(msg)
 
     return innerPrintMessage
 
-#closure = outterPrintMessage('Hello closue')
-#closure()
+
+# closure = outterPrintMessage('Hello closue')
+# closure()
 
 
 def make_multiplier_of(n):
     def multiplier(x):
         return x * n
+
     return multiplier
+
 
 # Multiplier of 3
 times3 = make_multiplier_of(3)

@@ -7,13 +7,13 @@ for a in args:
 
     try:
         print('entry value:', a)
-        r = 1/int(a)
+        r = 1 / int(a)
         break
-    except:    
+    except:
         print('encountered exception:', sys.exc_info()[0])
         print('Next entry')
         print()
-print('reciprocal of ', a, ' is ',  r)
+print('reciprocal of ', a, ' is ', r)
 
 try:
     a = int(input('Enter a positive value here:'))
@@ -23,4 +23,3 @@ try:
 except ValueError as ve:
     print(ve)
     traceback.print_exc()
-

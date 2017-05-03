@@ -4,14 +4,13 @@
 
 import random
 
-
 while True:
-	raw_input('Press Enter to roll the dice:')
-	
-	num = random.randint(1, 6)
-	print('You got {}'.format(num))
+    raw_input('Press Enter to roll the dice:')
 
-	choice = raw_input('Roll agin?(y/n)')
+    num = random.randint(1, 6)
+    print('You got {}'.format(num))
 
-	if (choice == 'n'):
-		break; 
+    choice = raw_input('Roll agin?(y/n)')
+
+    if (choice == 'n'):
+        break;

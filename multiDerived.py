@@ -1,5 +1,4 @@
 class A:
-
     def __init__(self):
         pass
 
@@ -8,12 +7,12 @@ class A:
 
 
 class B:
-
     def __init__(self):
         pass
 
     def printFeature(self):
         print('Feature name:', 'featureB')
+
 
 class MultiDerived(A, B):
     def __init__(self):
@@ -21,6 +20,3 @@ class MultiDerived(A, B):
 
     def printFeature(self):
         print('Feature name:', 'featureAB')
-
-
-

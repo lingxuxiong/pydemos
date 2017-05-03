@@ -2,8 +2,8 @@
 
 a = "Identation is very important for Python"
 
-if(True): 
-  print(a)
+if (True):
+    print(a)
 
 b = 1 + 2 + 3 + \
     4 + 5 + 6 + \
