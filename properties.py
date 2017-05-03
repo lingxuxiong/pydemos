@@ -2,14 +2,14 @@ class Celsius:
 
     ABSOLUTE_ZERO = -273
 
-    def __init__(self, value = 0):
-        self.temperature = value
+    def __init__(self, value=0):
+        self._temperature = value
 
     def to_fahrenheit(self):
         return self.temperature * 1.8 + 32
 
     def set_temperature(self, value):
-        if (value < self.ABSOLUTE_ZERO):
+        if value < self.ABSOLUTE_ZERO:
             raise ValueError('Temperature below ', self.ABSOLUTE_ZERO, 'is not possible.')
         print("setting value")
         self._temperature = value
@@ -17,7 +17,6 @@ class Celsius:
     def get_temperature(self):
         print("Getting value")
         return self._temperature
-
 
     temperature = property(get_temperature, set_temperature)
 
